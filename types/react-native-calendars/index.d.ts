@@ -18,6 +18,16 @@ export interface DateObject {
     year: number;
 }
 
+export interface CalendarProvider {
+  date: string,
+  onDateChanged?: Function,
+  onMonthChange?: Function,
+  showTodayButton?: boolean,
+  todayBottomMargin?: number,
+  todayButtonStyle?: number | number[] | {[string]: number},
+  disabledOpacity?: number
+}
+
 export interface CalendarDot {
     key: string;
     color: string;
